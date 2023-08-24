@@ -26,6 +26,6 @@ app.use('/', require('./routes/pages'))
 // ? server config
 const dotenv = require('dotenv')
 dotenv.config()
-const server = app.listen(process.env.PORT || process.env.port, () => {
+const server = app.listen(process.env.PORT || 5000, () => {
     console.log(`app runing on ${process.env.port}...`)
 })
