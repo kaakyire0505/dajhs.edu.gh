@@ -1,0 +1,163 @@
+<div class="container">
+    <div id="toggle">
+      <i class="uil uil-bars" id="open-menu"></i>
+      <i class="uil uil-times" id="close-menu"></i>
+    </div>
+      <section class="nav-section" id="nav">
+        <div id="navbar">
+          <div id="logo">
+            D/A<span class="unit"> JHS</span>
+          </div>
+  
+          <div id="navlinks">
+            <a href="/"><i class="uil uil-home"></i>Home</a>
+            <a href="/portal"><i class="uil uil-user"></i>Portfolio</a>
+            <a href="/news"><i class="uil uil-signal"></i>News</a>
+            <a href="/portal" id="active"><i class="uil uil-book"></i>Portal</a>
+          </div>
+        </div>
+      </section>
+   <!-- ?==========NAV SECTION ENDING====================== -->
+  
+  
+   <div class="student-portal">
+      <div class="portalname">
+          Pupils'<span class="unit"> Portal</span>
+      </div>
+  
+      <div class="portal-table">
+          <div class="student-info" data-aos="zoom-out-right" data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+              <h5>All Class</h5>
+              <hr>
+              <p><i class="uil uil-user"></i> HoD: Exams Committee <br>
+                  <i class="uil uil-table"></i> Class: F1 - F3 <br>
+                  <i class="uil uil-phone"></i> Academics: 0200595448 <br>
+                  <i class="uil uil-home"></i> Status: Professionals <br>
+                  <i class="uil uil-phone"></i> Secretary: 0597639506
+              </p>
+              <hr>
+              <div class="admin">
+                <h5>Admin Use Only</h5>
+                <a href="#"><i class="uil uil-padlock" id="key"></i></a>
+              </div>
+              <hr>
+              <form action="/portal" method="post" id="adform">
+              <!-- ?====control area=========== -->
+              <div class="lock" data-aos="zoom-out-right" data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+                <div>
+                  <label for="password"><i class="uil uil-padlock"></i> Enter Password</label>
+                </div>
+                <div>
+                  <input type="password" name="adminpassword" placeholder="Enter password" id="adminform" required>
+                </div>
+                <div>
+                  <button type="submit" class="btn btn-danger w-100 mt-3" id="adminbtn">Enter</button>
+                </div>
+                
+              </form>
+                <% if(typeof msg !== 'undefined'){ %>
+                      <%= msg %>
+               <% } %>
+  
+              </div>
+          </div>
+            
+              <!-- ?=====FORM TWO BEGINS==================== -->
+              <br><br>  
+              <div class="table" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+                <h6>D/A JHS 'B' FORM TWO CLASS <i class="uil uil-print" id="print"></i></h6>
+                <hr>
+                <table class="table table-striped table-danger" id="results-table-two">
+                    <thead>
+                        <tr>
+                            <th>Name</th>   
+                            <th>Marks Acquired</th>
+                            <th>Position</th>
+                            <th>Remarks</th>
+                        </tr>
+                        <% if(users.length > 0){ %>
+                            <% users.forEach(user => { %>
+                                 <tr>
+                                     <td><%= user.name %></td>
+                                     <td><%= user.totalmarks %></td>
+                                     <td><%= user.position %></td>
+                                     <td><%= user.remarks %></td>
+                                 </tr>
+                            <% }) %>
+                          <% } %>                      
+                    </thead>
+                </table>
+            </div>
+            <!-- ?============FORM TWO TABLE ENDS================== -->
+            </div>
+  
+   <div class="fote">
+    <h3>Disclaimer:</h3>
+    <small>Make sure to contact your exam committee for any doubt results or assessment.
+      Provide all scripts for scrutiny in case of such incidence happens for corrections of marks.
+    </small>
+   </div> 
+  
+  
+  
+  
+  <!-- ?============FOOTER AREA========================= -->
+  <footer class="footer-section">
+    <div id="infos">
+      <div id="services">
+        <h5><i class="uil uil-cog"></i> Our Services</h5>
+        <hr>
+        <li>Education</li>
+        <li>Guidance and Counseling</li>
+        <li>Web Development</li>
+        <li>Curriculum Planning</li>
+        <li>Remedial Classes</li>
+        <hr>
+        <div id="shortcuts">
+          <h5><i class="uil uil-search"></i> Research Plug</h5>
+          <a href="https://www.google.com/search?q=https%3A%2F%2Fwww.google.com%2F&oq=https%3A%2F%2Fwww.google.com%2F&gs_lcrp=EgZjaHJvbWUyBggAEEUYOjIGCAEQRRg5MgYIAhBFGDzSAQg1MTQ0ajBqNKgCALACAA&sourceid=chrome&ie=UTF-8"><i class="uil uil-google"></i> Google Search</a>
+          <a href="https://www.youtube.com/"><i class="uil uil-youtube"></i> Youtube</a>
+          <a href="https://www.ghanaweb.com/GhanaHomePage/entertainment/"><i class="uil uil-newspaper"></i> Ghana Web</a>
+          <a href="https://en.wikipedia.org/wiki/News"><i class="uil uil-book-open"></i> Wikipedia</a>
+          <a href="https://www.bing.com/"><i class="uil uil-bing"></i> Bing Search</a>
+        </div>
+        <hr>  
+        <div id="emails">
+          <h5><i class="uil uil-envelope"></i> Your Emails</h5>
+            <a href="https://mail.yahoo.com/"><i class="uil uil-yahoo"> !Yahoomail</i></a>
+          <a href="https://www.google.com/search?q=gmail+sign+in&oq=gmail&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBwgDEAAYjwIyBggEEEUYPTIGCAUQRRg9MgYIBhBFGEHSAQ0xMDA3MTUyOGowajE1qAIAsAIA&sourceid=chrome&ie=UTF-8"><i class="uil uil-google"> Gmail</i></a>
+          <a href="https://wa.me/+2330597639506"><i class="uil uil-whatsapp"> Whatsapp</i></a>
+        </div>
+      </div>
+  
+      <div class="email" data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+        <h5><i class="uil uil-envelope"></i> Contact us</h5>
+        <hr>
+        <form action="/mail" method="post">
+        <div><label for="email">Email Address</label></div>
+        <div>
+          <input type="text" name="email" placeholder="Enter your email address" id="emailmessage">
+        </div>
+        <div>
+          <textarea name="textarea" name="message" id="messagearea" cols="50" rows="5" placeholder="Enter your message"></textarea>
+        </div>
+        <div>
+          <button class="btn btn-danger mt-2">Submit</button>
+        </div>
+      </form>
+  <!-- scroll top button -->
+        <a href="#nav" class="top">^</a>
+      </div>
+    
+    </div>
+    <div id="copyright">
+      &COPY; 2023 All Rights Reserved D/A JHS Designed by kaakyiredanny ICT Department
+    </div>
+  </footer>
+  
+   <!-- ?==========CONTAINER ENDING====================== -->
+    </div>
+  
