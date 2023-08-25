@@ -226,30 +226,6 @@ router.get('/portal/formthree/c', async (req , res) => {
 
 
 
-// ?formthree portal C
-router.get('/portal/formthree/', async (req , res) => {
-    const query = 'SELECT * FROM jhsthreec'
-    db.query(query, (err, data) => {
-        if(err){
-            throw err
-        } else {
-            res.render('three-c', {
-                users: data
-            })
-        }
-    })
-    
-})
-// ?===============END OF JHS C==============================================
-
-
-
-
-
-
-
-
-
 // ? admin post
 router.post('/portal/admin', async (req, res) => {
     const { adminpassword } = req.body
