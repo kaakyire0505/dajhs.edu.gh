@@ -1079,7 +1079,7 @@ li{
     }
     #toggle{
         display: block;
-        width: 94.5%;
+        width: 94.2%;
         background-color: var(--background_gradient);
     }
     #open-menu,#close-menu{
@@ -1096,7 +1096,7 @@ li{
     }
     .leaders{
         width: 100%;
-        border-bottom-right-radius: 100px;
+        border-bottom-right-radius: 200px;
         height: fit-content;
     }
     .message h5,h4{
@@ -1170,8 +1170,8 @@ li{
     .sports-gallery img,.cleanup-gallery img,
     .talk-gallery img,.health-gallery img,
     .election-gallery img,.match-gallery img,.excursion-gallery img{
-        width: 65%;
-        height: 65%;
+        width: 85%;
+        height: 85%;
     }
     /* ?==========GALLERY ENDS=============== */
 
@@ -1255,7 +1255,7 @@ li{
 @media (max-width: 400px){
     #toggle{
         display: block;
-        width: 93.5%;
+        width: 93.2%;
         background-color: var(--background_gradient);
     }
     #open-menu,#close-menu{
@@ -1275,7 +1275,7 @@ li{
     }
     .leaders{
         width: 100%;
-        border-bottom-right-radius: 90px;
+        border-bottom-right-radius: 130px;
         height: fit-content;
     }
     .heads{
