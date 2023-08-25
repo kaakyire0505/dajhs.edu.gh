@@ -1083,7 +1083,7 @@ li{
         background-color: var(--background_gradient);
     }
     #open-menu,#close-menu{
-        margin-left: 17rem;
+        margin-left: 20rem;
         color: darkorange;
     }
     #navbar{
@@ -1096,14 +1096,14 @@ li{
     }
     .leaders{
         width: 100%;
-        border-bottom-right-radius: 300px;
+        border-bottom-right-radius: 100px;
         height: fit-content;
     }
     .message h5,h4{
         font-size: 1rem;
     }
     .svg{
-        margin-left: 13rem;
+        margin-left: 10rem;
     }
     .svg img{
         margin-left: 1rem;
@@ -1259,14 +1259,14 @@ li{
         background-color: var(--background_gradient);
     }
     #open-menu,#close-menu{
-        margin-left: 14rem;
+        margin-left: 18rem;
         color: darkorange;
     }
     .portfolio-section{
         margin-top: 1.7rem;
     }
     .svg{
-        margin-left: 10rem;
+        margin-left: 7rem;
     }
     .portfolio-section{
         display: flex;
@@ -1275,7 +1275,7 @@ li{
     }
     .leaders{
         width: 100%;
-        border-bottom-right-radius: 180px;
+        border-bottom-right-radius: 90px;
         height: fit-content;
     }
     .heads{
