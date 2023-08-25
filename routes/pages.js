@@ -223,6 +223,23 @@ router.get('/portal/formthree/c', async (req , res) => {
     })
     
 })
+
+
+
+// ?formthree portal C
+router.get('/portal/formthree/', async (req , res) => {
+    const query = 'SELECT * FROM jhsthreec'
+    db.query(query, (err, data) => {
+        if(err){
+            throw err
+        } else {
+            res.render('three-c', {
+                users: data
+            })
+        }
+    })
+    
+})
 // ?===============END OF JHS C==============================================
 
 
@@ -263,13 +280,13 @@ router.post('/portal/admin', async (req, res) => {
 router.post('/portal/formone', (req, res) => {
     const {formone} = req.body
     if(formone == 'formonea'){
-        res.redirect('/portal/formone/a')
+        res.render('one-a')
     } else
     if(formone == 'formoneb'){
-        res.redirect('/portal/formone/b')
+        res.render('oneportal')
     } else
     if(formone == 'formonec'){
-        res.redirect('/portal/formone/c')
+        res.render('one-c')
     } else {
         return res.render('portal')
     }
@@ -280,13 +297,13 @@ router.post('/portal/formone', (req, res) => {
 router.post('/portal/formtwo', (req, res) => {
     const {formtwo} = req.body
     if(formtwo == 'formtwoa'){
-        res.redirect('/portal/formtwo/a')
+        res.render('two-a')
     } else
     if(formtwo == 'formtwob'){
-        res.redirect('/portal/formtwo/b')
+        res.render('twoportal')
     } else
     if(formtwo == 'formtwoc'){
-        res.redirect('/portal/formtwo/c')
+        res.render('two-c')
     } else {
         return res.render('portal')
     }
@@ -298,13 +315,13 @@ router.post('/portal/formtwo', (req, res) => {
 router.post('/portal/formthree', (req, res) => {
     const {formthree} = req.body
     if(formthree == 'formthreea'){
-        res.redirect('/portal/formthree/a')
+        res.render('three-a')
     } else
     if(formthree == 'formthreeb'){
-        res.redirect('/portal/formthree/b')
+        res.render('threeportal')
     } else
     if(formthree == 'formthreec'){
-        res.redirect('/portal/formthree/c')
+        res.render('three-c')
     } else {
         return res.render('portal')
     }
