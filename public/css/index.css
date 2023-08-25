@@ -892,7 +892,7 @@ li{
         top: 0;
     }
     #open-menu{
-        margin-left: 40rem;
+        margin-left: 43rem;
         font-size: 1.7rem;
         color: darkorange;
     }
@@ -1083,7 +1083,7 @@ li{
         background-color: var(--background_gradient);
     }
     #open-menu,#close-menu{
-        margin-left: 15rem;
+        margin-left: 17rem;
         color: darkorange;
     }
     #navbar{
@@ -1259,7 +1259,7 @@ li{
         background-color: var(--background_gradient);
     }
     #open-menu,#close-menu{
-        margin-left: 10rem;
+        margin-left: 14rem;
         color: darkorange;
     }
     .portfolio-section{
