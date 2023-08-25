@@ -1170,8 +1170,8 @@ li{
     .sports-gallery img,.cleanup-gallery img,
     .talk-gallery img,.health-gallery img,
     .election-gallery img,.match-gallery img,.excursion-gallery img{
-        width: 85%;
-        height: 85%;
+        width: 100%;
+        height: 100%;
     }
     /* ?==========GALLERY ENDS=============== */
 
@@ -1305,8 +1305,8 @@ li{
     .sports-gallery img,.cleanup-gallery img,
     .talk-gallery img,.health-gallery img,
     .election-gallery img,.match-gallery img,.excursion-gallery img{
-        width: 55%;
-        height: 55%;
+        width: 100%;
+        height: 100%;
     }
     .school-goal{
         display: flex;
