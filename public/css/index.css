@@ -1300,7 +1300,12 @@ li{
     .tutors-image-container img{
         width: 100%;
     }
-    
+     .school-goal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
     .tutors-gallery img,.culture-gallery img,
     .sports-gallery img,.cleanup-gallery img,
     .talk-gallery img,.health-gallery img,
