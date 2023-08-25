@@ -47,7 +47,7 @@ router.post('/mail', (req, res) => {
     
     const mailOptions = {
         from: email,
-        to: 'codekaakyiredanny@gmail.com',
+        to: 'dajhsschool@gmail.com',
         subject: 'Visitor',
         html: `
         <h1>Contact Form</h1>
