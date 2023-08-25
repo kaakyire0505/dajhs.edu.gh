@@ -256,13 +256,13 @@ router.post('/portal/admin', async (req, res) => {
 router.post('/portal/formone', (req, res) => {
     const {formone} = req.body
     if(formone == 'formonea'){
-        res.render('one-a')
+       return res.render('one-a')
     } else
     if(formone == 'formoneb'){
-        res.render('oneportal')
+       return res.render('oneportal')
     } else
     if(formone == 'formonec'){
-        res.render('one-c')
+       return res.render('one-c')
     } else {
         return res.render('portal')
     }
