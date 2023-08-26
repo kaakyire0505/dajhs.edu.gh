@@ -244,6 +244,9 @@ li{
   justify-content: space-beween;
   width: 100%;
 }
+.sound{
+  margin-left: 7rem;
+}
 .sample p{
     font-size: 1.2rem;
     font-weight: bold;
