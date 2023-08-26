@@ -35,7 +35,7 @@ searchButton.addEventListener('click', (e) => {
     <p>*${word[0].word} <br>
     <small class="text-muted">${word[0].meanings[0].partOfSpeech} ${word[0].phonetic}</small>
     </p>
-    <div><i class="uil uil-volume-off" id="sound" onclick="playSound()"></i></div>
+    <div><i class="uil uil-volume" id="sound" onclick="playSound()"></i></div>
     
     <div class="definition">
     <h5>Meaning</h5>
