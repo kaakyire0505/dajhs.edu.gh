@@ -199,7 +199,7 @@ li{
 
 
 .dictionary{
-    width: 400px;
+    width: 500px;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -1173,6 +1173,9 @@ li{
     .container{
         height: fit-content;
     }
+  .dictionary{
+    width: 350px;
+  }
     #toggle{
         display: block;
         width: 94%;
@@ -1354,6 +1357,9 @@ li{
         width: 93%;
         background-color: var(--background_gradient);
     }
+  .dictionary{
+    width: 350px;
+  }
     #open-menu,#close-menu{
         margin-left: 18rem;
         color: darkorange;
