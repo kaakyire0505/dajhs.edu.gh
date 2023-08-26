@@ -220,11 +220,12 @@ li{
 .search input{
     width: 100%;
     padding: 10px;
+  border: none;
 }
 .search button{
     width: 100%;
     cursor: pointer;
-  margin-left: 25px;
+  margin-left: 35px;
 }
 .sample{
     width: 100%;
