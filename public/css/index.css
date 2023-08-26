@@ -198,6 +198,102 @@ li{
 
 
 
+.dictionary{
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    border: 1px solid grey;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.search{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.search input{
+    width: 100%;
+    padding: 10px;
+}
+.search button{
+    width: 50%;
+    cursor: pointer;
+}
+.sample{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.sample p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.text-muted{
+    font-size: 0.7rem;
+}
+.meaning{
+    display: flex;
+    padding: 1rem;
+    border-right: 3px solid greenyellow;
+}
+.definition{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    border-left: 10px solid darkblue;
+}
+.phonetic{
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    border-right: 3px solid red;
+}
+.synonyms{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: 1rem;
+    border-right: 3px solid black;
+    
+}
+
+.antonyms{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: 1rem;
+    border-left: 3px solid red;
+}
+.examples{
+    width: 100%;
+    height: fit-content;
+    border-right: 3px solid darkorange;
+    padding: 1rem;
+    font-style: italic;
+}
+#sound{
+    font-size: 1.5rem;
+    color: darkorange;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 /* ?==============PROFILE AND COURSE====================== */
 #profile-course{
     display: flex;
