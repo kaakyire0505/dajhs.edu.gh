@@ -1175,10 +1175,17 @@ li{
         height: fit-content;
     }
   .dictionary{
-    width: 350px;
+    width: 380px;
      margin-left: 0;
     margin-top: 20px;
   }
+  .sample{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
     #toggle{
         display: block;
         width: 94%;
@@ -1361,10 +1368,17 @@ li{
         background-color: var(--background_gradient);
     }
   .dictionary{
-    width: 350px;
+    width: 380px;
     margin-left: 0;
     margin-top: 20px;
   }
+  .sample{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
     #open-menu,#close-menu{
         margin-left: 18rem;
         color: darkorange;
