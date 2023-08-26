@@ -20,7 +20,7 @@
     --box_shadow: 0rem 0.9rem 0.9rem rgba(0,0,0,0.2);
     --border_radius: 0.8rem;
     --line_height: 1.7rem;
-    --gen_width: 82%;
+    --gen_width: 82.5%;
     --swiperWidth: 60%;
     --width-100: 100%;
     --gen_height: 100vh;
@@ -1079,7 +1079,7 @@ li{
     }
     #toggle{
         display: block;
-        width: 94.2%;
+        width: 94%;
         background-color: var(--background_gradient);
     }
     #open-menu,#close-menu{
@@ -1255,7 +1255,7 @@ li{
 @media (max-width: 400px){
     #toggle{
         display: block;
-        width: 93.2%;
+        width: 93%;
         background-color: var(--background_gradient);
     }
     #open-menu,#close-menu{
