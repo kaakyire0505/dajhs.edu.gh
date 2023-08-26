@@ -279,6 +279,7 @@ li{
     flex-wrap: wrap;
     height: fit-content;
     padding: 1rem;
+    width: fit-content;
     border-right: 3px solid black;
     
 }
