@@ -246,6 +246,7 @@ li{
 }
 .sound{
   margin-left: 7rem;
+  margin-top: 1rem;
 }
 .sample p{
     font-size: 1.2rem;
@@ -304,6 +305,7 @@ li{
     font-size: 1.5rem;
     color: darkorange;
     cursor: pointer;
+  font-size: 1.7rem;
 }
 
 
