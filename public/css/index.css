@@ -207,7 +207,8 @@ li{
     padding: 10px;
     flex-wrap: wrap;
      margin-top: var(--margin-top-one);
-  margin-left: 5rem;
+    margin-left: 5rem;
+  border: var(--border);
 }
 .search{
     width: 100%;
