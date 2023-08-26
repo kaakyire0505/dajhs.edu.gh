@@ -16,7 +16,6 @@ open_menu.onclick = () => {
     close_menu.style.display = 'block'
 }
 
-
 const url = 'https://api.dictionaryapi.dev/api/v2/entries/en/'
 
 const result = document.getElementById('result')
@@ -36,7 +35,7 @@ searchButton.addEventListener('click', (e) => {
     <p>*${word[0].word} <br>
     <small class="text-muted">${word[0].meanings[0].partOfSpeech} ${word[0].phonetic}</small>
     </p>
-    <div><i class="uil uil-volume-off" id="sound"></i></div>
+    <div><i class="uil uil-volume-off" id="sound" onclick="playSound()"></i></div>
     
     <div class="definition">
     <h5>Meaning</h5>
@@ -45,25 +44,26 @@ searchButton.addEventListener('click', (e) => {
     
     <div class="synonyms">
     <h5>Synonyms</h5>
-    ${word[0].meanings[0].synonyms}
+    ${word[0].meanings[0].synonyms || ""}
     </div>
 
     <div class="antonyms">
     <h5>Antonyms</h5>
-    ${word[0].meanings[0].antonyms}
+    ${word[0].meanings[0].antonyms || ""}
     </div>
     
     <div class="examples">
-    ${word[0].meanings[0].definitions[0].example}
+    ${word[0].meanings[0].definitions[0].example || ""}
     </div>
-    </div>
-
-    
+    </div> 
     `
-    console.log(word)
+    sound.setAttribute('src', `https:${word[0].phonetics[0].audio}`)
  })
 })
 
+function playSound(){
+    sound.play()
+}
 
 // ? going to admin side
 const adform = document.getElementById('adform')
