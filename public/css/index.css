@@ -1177,6 +1177,8 @@ li{
     }
   .dictionary{
     width: 350px;
+     margin-left: 0;
+    margin-top: 20px;
   }
     #toggle{
         display: block;
@@ -1361,6 +1363,8 @@ li{
     }
   .dictionary{
     width: 350px;
+    margin-left: 0;
+    margin-top: 20px;
   }
     #open-menu,#close-menu{
         margin-left: 18rem;
