@@ -16,8 +16,9 @@ open_menu.onclick = () => {
     close_menu.style.display = 'block'
 }
 
-const url = 'https://api.dictionaryapi.dev/api/v2/entries/en/'
 
+
+const url = 'https://api.dictionaryapi.dev/api/v2/entries/en/'
 const result = document.getElementById('result')
 const phonetic = document.getElementById('phonetic')
 const example = document.getElementById('example')
