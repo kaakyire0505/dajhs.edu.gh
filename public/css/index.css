@@ -209,6 +209,7 @@ li{
      margin-top: var(--margin-top-one);
     margin-left: 5rem;
   border: var(--border);
+  border-radius: var(--border-radius)
 }
 .search{
     width: 100%;
