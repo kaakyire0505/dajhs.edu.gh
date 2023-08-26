@@ -207,6 +207,8 @@ li{
     border: 1px solid grey;
     padding: 10px;
     flex-wrap: wrap;
+    margin-top: var(--margin-left-one);
+  margin-left: 50rem;
 }
 .search{
     width: 100%;
