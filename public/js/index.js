@@ -65,12 +65,11 @@ searchButton.addEventListener('click', (e) => {
     `
  })
 })
-sound.addEventListener('click', (e) => {
-    e.preventDefault()
+ function playSound(){
     const voice = `https:${word[0].phonetics[0].audio}`
     const audio = new Audio(voice)
     audio.play()
-})
+ }
 
 
 
