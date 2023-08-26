@@ -199,7 +199,7 @@ li{
 
 
 .dictionary{
-    width: 500px;
+    width: var(--gen_width);
     height: fit-content;
     display: flex;
     flex-direction: column;
