@@ -16,6 +16,55 @@ open_menu.onclick = () => {
     close_menu.style.display = 'block'
 }
 
+
+const url = 'https://api.dictionaryapi.dev/api/v2/entries/en/'
+
+const result = document.getElementById('result')
+const phonetic = document.getElementById('phonetic')
+const example = document.getElementById('example')
+const searchButton = document.getElementById('search-button')
+const searchInput = document.getElementById('search-input')
+const sound = document.getElementById('sound')
+
+searchButton.addEventListener('click', (e) => {
+ e.preventDefault()
+ fetch(`${url} ${searchInput.value}`)
+ .then(res => res.json())
+ .then(word => {
+    result.innerHTML = `
+    <div class="sample">
+    <p>*${word[0].word} <br>
+    <small class="text-muted">${word[0].meanings[0].partOfSpeech} ${word[0].phonetic}</small>
+    </p>
+    <div><i class="uil uil-volume-off" id="sound"></i></div>
+    
+    <div class="definition">
+    <h5>Meaning</h5>
+    ${word[0].meanings[0].definitions[0].definition}
+    </div>
+    
+    <div class="synonyms">
+    <h5>Synonyms</h5>
+    ${word[0].meanings[0].synonyms}
+    </div>
+
+    <div class="antonyms">
+    <h5>Antonyms</h5>
+    ${word[0].meanings[0].antonyms}
+    </div>
+    
+    <div class="examples">
+    ${word[0].meanings[0].definitions[0].example}
+    </div>
+    </div>
+
+    
+    `
+    console.log(word)
+ })
+})
+
+
 // ? going to admin side
 const adform = document.getElementById('adform')
 const key = document.getElementById('key') 
