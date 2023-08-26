@@ -17,8 +17,8 @@ open_menu.onclick = () => {
 }
 
 
-
 const url = 'https://api.dictionaryapi.dev/api/v2/entries/en/'
+
 const result = document.getElementById('result')
 const phonetic = document.getElementById('phonetic')
 const example = document.getElementById('example')
@@ -33,6 +33,7 @@ searchButton.addEventListener('click', (e) => {
  .then(word => {
     result.innerHTML = `
     <div class="sample">
+    <div class="wordsound">
     <div> 
     <p>*${word[0].word} <br>
     <small class="text-muted">${word[0].meanings[0].partOfSpeech} ${word[0].phonetic}</small>
@@ -40,6 +41,7 @@ searchButton.addEventListener('click', (e) => {
     </div>
    
     <div><i class="uil uil-volume-off" id="sound" onclick="playSound()"></i></div>
+    </div>
     
     <div class="definition">
     <h5>Meaning</h5>
@@ -69,8 +71,6 @@ sound.addEventListener('click', (e) => {
     const audio = new Audio(voice)
     audio.play()
 })
-
-
 
 
 
