@@ -40,7 +40,7 @@ searchButton.addEventListener('click', (e) => {
     </p>
     </div>
    
-    <div><i class="uil uil-volume-off" id="sound" onclick="playSound()"></i></div>
+    <div class="sound"><i class="uil uil-volume-off" id="sound" onclick="playSound()"></i></div>
     </div>
     
     <div class="definition">
