@@ -221,8 +221,9 @@ li{
     padding: 10px;
 }
 .search button{
-    width: 30%;
+    width: 70%;
     cursor: pointer;
+  margin-left: 15px;
 }
 .sample{
     width: 100%;
