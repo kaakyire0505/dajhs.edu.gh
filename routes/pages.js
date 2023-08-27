@@ -70,6 +70,39 @@ router.post('/mail', (req, res) => {
 
 
 
+
+
+
+// ? admin post
+router.post('/portal/admin', async (req, res) => {
+    const { adminpassword } = req.body
+    if(adminpassword !== 'secured'){
+       res.render('portal', { msg: '**wrong password**' })
+    } else {
+        const user = {
+            name: 'Emmanuel Boachie',
+            password: adminpassword,
+            time: new Date().toUTCString()
+        }
+    
+        const query = 'INSERT INTO admin SET ?'
+        db.query(query, [user], async (err, data) => {
+            if(err) throw err
+            console.log('login detected')
+            console.log(data)
+        })
+    
+        res.redirect('/portal/marks')
+    
+    }
+    
+})
+
+
+
+
+
+
 // ? Form one portal
 router.get('/portal/formone/b', async (req , res) => {
     const query = 'SELECT * FROM jhsone'
@@ -224,32 +257,6 @@ router.get('/portal/formthree/c', async (req , res) => {
     
 })
 
-
-
-// ? admin post
-router.post('/portal/admin', async (req, res) => {
-    const { adminpassword } = req.body
-    if(adminpassword !== 'secured'){
-       res.render('portal', { msg: '**wrong password**' })
-    } else {
-        const user = {
-            name: 'Emmanuel Boachie',
-            password: adminpassword,
-            time: new Date().toUTCString()
-        }
-    
-        const query = 'INSERT INTO admin SET ?'
-        db.query(query, [user], async (err, data) => {
-            if(err) throw err
-            console.log('login detected')
-            console.log(data)
-        })
-    
-        res.redirect('/portal/marks')
-    
-    }
-    
-})
 
 
 // ? form one pupil portal validation
