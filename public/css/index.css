@@ -217,6 +217,9 @@ li{
     display: flex;
     justify-content: space-between;
 }
+.search i{
+  color: darkorange;
+}
 .search input{
     width: 100%;
     padding: 10px;
@@ -234,6 +237,7 @@ li{
 #search-button{
   margin-left: 15px;
   font-size: 1.7rem;
+  color: darkorange;
 }
 .sample{
     width: 100%;
