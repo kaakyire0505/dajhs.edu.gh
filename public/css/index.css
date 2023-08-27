@@ -217,8 +217,11 @@ li{
     display: flex;
     justify-content: space-between;
 }
-.search i{
+.dictionary i{
   color: darkorange;
+}
+.dictionary h4{
+  text-align: center;
 }
 .search input{
     width: 100%;
