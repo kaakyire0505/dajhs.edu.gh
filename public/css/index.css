@@ -952,12 +952,12 @@ li{
     margin-top: 5rem;
 }
 .left{
-    width: 45%;
+    width: 100%;
 }
 
 .news{
     padding: 10px;
-    width: 100%;
+    width: 50%;
     height: fit-content;
     box-shadow: var(--box_shadow);
     border-radius: var(--border_radius);
