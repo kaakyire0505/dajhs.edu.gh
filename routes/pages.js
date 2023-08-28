@@ -353,7 +353,24 @@ router.post('/marks/formone', (req, res) => {
             })
         })
     } else {
-       
+         if(oneclass == 'f1 c' || 'form 1 c' || 'form one c'){
+        const query = 'INSERT INTO jhsonec SET ?'
+        const form_student = {
+            name: onename,
+            totalmarks: onetotalmarks,
+            position: oneposition,
+            remarks: oneremarks,
+        }
+
+        db.query(query, [form_student], (err, data) => {
+            if(err) throw err
+            console.log('form 1 entered')
+            return res.render('marks', {
+                name: onename + ' ' + 'successfully entered',
+                time: new Date().toUTCString()
+            })
+        })
+        
     }
 })
 
