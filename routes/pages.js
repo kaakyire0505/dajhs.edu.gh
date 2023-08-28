@@ -19,7 +19,6 @@ router.get('/portfolio', (req, res) => {
     res.render('portfolio')
 })
 
-
 // ? event page
 router.get('/news', (req, res) => {
     res.render('event')
