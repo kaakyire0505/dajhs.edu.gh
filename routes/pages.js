@@ -315,7 +315,7 @@ router.post('/portal/formthree', (req, res) => {
 
 // ?====================JHS A BLOCK======================================
 // ? entering of data of form 1 JHS A
-router.post('/marks/formone/a', (req, res) => {
+router.post('/marks/formone', (req, res) => {
     const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
     if(oneclass == 'f1 a' || 'form 1 a' || 'form one a'){
         const query = 'INSERT INTO jhsonea SET ?'
@@ -340,7 +340,7 @@ router.post('/marks/formone/a', (req, res) => {
 
 
 // ? entering of data of form 2 JHS A
-router.post('/marks/formtwo/a', (req, res) => {
+router.post('/marks/formtwo', (req, res) => {
     const {twoname, twoclass, twototalmarks, twoposition, tworemarks} = req.body
     if(twoclass == 'f2 a' || 'form 2 a' || 'form two a'){
         const query = 'INSERT INTO jhstwoa SET ?'
@@ -365,7 +365,7 @@ router.post('/marks/formtwo/a', (req, res) => {
 
 
 // ? entering of data of form 3 JHS A
-router.post('/marks/formthree/a', (req, res) => {
+router.post('/marks/formthree', (req, res) => {
     const {threename, threeclass, threetotalmarks, threeposition, threeremarks} = req.body
     if(threeclass == 'f3 a' || 'form 3 a' || 'form three a'){
         const query = 'INSERT INTO jhsthreea SET ?'
@@ -395,7 +395,7 @@ router.post('/marks/formthree/a', (req, res) => {
 
 // ?====================JHS B BLOCK======================================
 // ? entering of data of form 1 JHS A
-router.post('/marks/formone/b', (req, res) => {
+router.post('/marks/formone', (req, res) => {
     const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
     if(oneclass == 'f1 b' || 'form 1 b' || 'form one b'){
         const query = 'INSERT INTO jhsone SET ?'
@@ -420,7 +420,7 @@ router.post('/marks/formone/b', (req, res) => {
 
 
 // ? entering of data of form 2 JHS A
-router.post('/marks/formtwo/b', (req, res) => {
+router.post('/marks/formtwo', (req, res) => {
     const {twoname, twoclass, twototalmarks, twoposition, tworemarks} = req.body
     if(twoclass == 'f2 b' || 'form 2 b' || 'form two b'){
         const query = 'INSERT INTO jhstwo SET ?'
@@ -445,7 +445,7 @@ router.post('/marks/formtwo/b', (req, res) => {
 
 
 // ? entering of data of form 3 JHS A
-router.post('/marks/formthree/b', (req, res) => {
+router.post('/marks/formthree', (req, res) => {
     const {threename, threeclass, threetotalmarks, threeposition, threeremarks} = req.body
     if(threeclass == 'f3 b' || 'form 3 b' || 'form three b'){
         const query = 'INSERT INTO jhsthree SET ?'
@@ -474,7 +474,7 @@ router.post('/marks/formthree/b', (req, res) => {
 
 // ?====================JHS C BLOCK======================================
 // ? entering of data of form 1 JHS A
-router.post('/marks/formone/c', (req, res) => {
+router.post('/marks/formone', (req, res) => {
     const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
     if(oneclass == 'f1 c' || 'form 1 c' || 'form one c'){
         const query = 'INSERT INTO jhsonec SET ?'
@@ -499,7 +499,7 @@ router.post('/marks/formone/c', (req, res) => {
 
 
 // ? entering of data of form 2 JHS A
-router.post('/marks/formtwo/c', (req, res) => {
+router.post('/marks/formtwo', (req, res) => {
     const {twoname, twoclass, twototalmarks, twoposition, tworemarks} = req.body
     if(twoclass == 'f2 c' || 'form 2 c' || 'form two c'){
         const query = 'INSERT INTO jhstwoc SET ?'
@@ -524,7 +524,7 @@ router.post('/marks/formtwo/c', (req, res) => {
 
 
 // ? entering of data of form 3 JHS A
-router.post('/marks/formthree/c', (req, res) => {
+router.post('/marks/formthree', (req, res) => {
     const {threename, threeclass, threetotalmarks, threeposition, threeremarks} = req.body
     if(threeclass == 'f3 c' || 'form 3 c' || 'form three c'){
         const query = 'INSERT INTO jhsthreec SET ?'
