@@ -947,8 +947,6 @@ li{
 .events{
     padding: 2rem;
     height: fit-content;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     margin-top: 5rem;
 }
@@ -992,7 +990,7 @@ li{
     border-radius: none;
 }
 #news{
-    width: 100%;
+    width: 50%;
 }
 
 
