@@ -954,9 +954,6 @@ li{
 }
 .left{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
 
 .news{
