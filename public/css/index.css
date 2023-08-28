@@ -953,7 +953,9 @@ li{
 .left{
     width: 100%;
 }
-
+.news-container{
+  width: 50%;
+}
 .news{
     padding: 10px;
     width: 50%;
