@@ -334,7 +334,7 @@ router.post('/marks/formone', (req, res) => {
             })
         })
         
-    } else {
+    } else 
         if(oneclass == 'f1 b' || 'form 1 b' || 'form one b'){
         const query = 'INSERT INTO jhsone SET ?'
         const form_student = {
@@ -352,7 +352,7 @@ router.post('/marks/formone', (req, res) => {
                 time: new Date().toUTCString()
             })
         })
-    } else {
+    } else 
          if(oneclass == 'f1 c' || 'form 1 c' || 'form one c'){
         const query = 'INSERT INTO jhsonec SET ?'
         const form_student = {
