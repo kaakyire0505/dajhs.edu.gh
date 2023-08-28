@@ -335,9 +335,49 @@ router.post('/marks/formone', (req, res) => {
             })
         })
         
+    } else {
+        if(oneclass == 'f1 b' || 'form 1 b' || 'form one b'){
+        const query = 'INSERT INTO jhsone SET ?'
+        const form_student = {
+            name: onename,
+            totalmarks: onetotalmarks,
+            position: oneposition,
+            remarks: oneremarks,
+        }
+
+        db.query(query, [form_student], (err, data) => {
+            if(err) throw err
+            console.log('form 1 entered')
+            return res.render('marks', {
+                name: onename + ' ' + 'successfully entered',
+                time: new Date().toUTCString()
+            })
+        })
+    } else {
+         if(oneclass == 'f1 c' || 'form 1 c' || 'form one c'){
+        const query = 'INSERT INTO jhsonec SET ?'
+        const form_student = {
+            name: onename,
+            totalmarks: onetotalmarks,
+            position: oneposition,
+            remarks: oneremarks,
+        }
+
+        db.query(query, [form_student], (err, data) => {
+            if(err) throw err
+            console.log('form 1 entered')
+            return res.render('marks', {
+                name: onename + ' ' + 'successfully entered',
+                time: new Date().toUTCString()
+            })
+        })
+        
     }
 })
 
+
+
+        // ===============================================
 
 // ? entering of data of form 2 JHS A
 router.post('/marks/formtwo', (req, res) => {
@@ -393,30 +433,7 @@ router.post('/marks/formthree', (req, res) => {
 
 
 
-// ?====================JHS B BLOCK======================================
-// ? entering of data of form 1 JHS A
-router.post('/marks/formone', (req, res) => {
-    const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
-    if(oneclass == 'f1 b' || 'form 1 b' || 'form one b'){
-        const query = 'INSERT INTO jhsone SET ?'
-        const form_student = {
-            name: onename,
-            totalmarks: onetotalmarks,
-            position: oneposition,
-            remarks: oneremarks,
-        }
 
-        db.query(query, [form_student], (err, data) => {
-            if(err) throw err
-            console.log('form 1 entered')
-            return res.render('marks', {
-                name: onename + ' ' + 'successfully entered',
-                time: new Date().toUTCString()
-            })
-        })
-        
-    }
-})
 
 
 // ? entering of data of form 2 JHS A
@@ -471,31 +488,6 @@ router.post('/marks/formthree', (req, res) => {
 
 
 
-
-// ?====================JHS C BLOCK======================================
-// ? entering of data of form 1 JHS A
-router.post('/marks/formone', (req, res) => {
-    const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
-    if(oneclass == 'f1 c' || 'form 1 c' || 'form one c'){
-        const query = 'INSERT INTO jhsonec SET ?'
-        const form_student = {
-            name: onename,
-            totalmarks: onetotalmarks,
-            position: oneposition,
-            remarks: oneremarks,
-        }
-
-        db.query(query, [form_student], (err, data) => {
-            if(err) throw err
-            console.log('form 1 entered')
-            return res.render('marks', {
-                name: onename + ' ' + 'successfully entered',
-                time: new Date().toUTCString()
-            })
-        })
-        
-    }
-})
 
 
 // ? entering of data of form 2 JHS A
