@@ -671,8 +671,8 @@ li{
 .marks-container{
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  width:80%;
+  flex-wrap: wrap;
+  width:100%;
 }
 .a,.b,.c{
   display: flex;
