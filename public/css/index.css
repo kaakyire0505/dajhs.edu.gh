@@ -668,6 +668,11 @@ li{
     height: 500px;
     background-color: rgba(0,0,0,0.2);
 }
+.marks-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 .a,.b,.c{
   display: flex;
   width: 100%;
