@@ -340,13 +340,13 @@ router.post('/formone/a', (req, res) => {
 // ? entering of data of form 2 JHS A
 router.post('/formtwoa/marks', (req, res) => {
     const {twoname, twoclass, twototalmarks, twoposition, tworemarks} = req.body
-    if(oneclass == 'f2a' || 'form 2a' || 'form two a'){
+    if(twoclass == 'f2a' || 'form 2a' || 'form two a'){
         const query = 'INSERT INTO jhstwoa SET ?'
         const form_student = {
-            name: onename,
-            totalmarks: onetotalmarks,
-            position: oneposition,
-            remarks: oneremarks,
+            name: twoname,
+            totalmarks: twototalmarks,
+            position: twoposition,
+            remarks: tworemarks,
         }
 
         db.query(query, [form_student], (err, data) => {
