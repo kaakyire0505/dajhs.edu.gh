@@ -339,7 +339,7 @@ router.post('/formone/a', (req, res) => {
     
 // ? entering of data of form 2 JHS A
 router.post('/formtwo/a', (req, res) => {
-    const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
+    const {twoname, twoclass, twototalmarks, twoposition, tworemarks} = req.body
     if(oneclass == 'f2a' || 'form 2a' || 'form two a'){
         const query = 'INSERT INTO jhstwoa SET ?'
         const form_student = {
@@ -364,7 +364,7 @@ router.post('/formtwo/a', (req, res) => {
 
 // ? entering of data of form 3 JHS A
 router.post('/formthree/a', (req, res) => {
-    const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
+    const {threename, threeclass, threetotalmarks, threeposition, threeremarks} = req.body
     if(oneclass == 'f3a' || 'form 3a' || 'form three a'){
         const query = 'INSERT INTO jhsthreea SET ?'
         const form_student = {
