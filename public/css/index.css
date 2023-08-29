@@ -679,7 +679,7 @@ li{
   width: 100%;
     justify-content: space-between;
   flex-direction: row;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 .marks{
     width: 100%;
@@ -693,7 +693,7 @@ li{
 }
 .marks .btn{
     width: 80%;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .marks .btn:hover{
     outline: none;
