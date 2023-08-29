@@ -333,9 +333,10 @@ router.post('/marks/formone/a', (req, res) => {
             })
         })
         
-    } 
-        
+    }       
+})
 
+    
 // ? entering of data of form 2 JHS A
 router.post('/marks/formtwo/a', (req, res) => {
     const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
@@ -357,7 +358,8 @@ router.post('/marks/formtwo/a', (req, res) => {
         })
         
     } 
-        
+  
+})      
 
 
 // ? entering of data of form 3 JHS A
@@ -382,7 +384,8 @@ router.post('/marks/formthree/a', (req, res) => {
         })
         
     } 
-        
+  
+})      
         // ===============================================
 
 
@@ -409,7 +412,8 @@ router.post('/marks/formone/b', (req, res) => {
         })
         
     } 
-        
+  
+})      
 
     
     
@@ -463,8 +467,6 @@ router.post('/marks/formthree/b', (req, res) => {
 })
 
 
-// =============================================================
-
 
 // ? entering of data of form 1 JHS C
 router.post('/marks/formone/c', (req, res) => {
@@ -488,13 +490,8 @@ router.post('/marks/formone/c', (req, res) => {
         })
         
     } 
-        
+})      
 
-
-
-
-
-    
 
 // ? entering of data of form 2 JHS C
 router.post('/marks/formtwo/c', (req, res) => {
@@ -545,7 +542,7 @@ router.post('/marks/formthree/c', (req, res) => {
     }
 })
 
-// =============================================================
+
 
 
 
