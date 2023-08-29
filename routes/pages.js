@@ -314,10 +314,57 @@ router.post('/portal/formthree', (req, res) => {
 
 // ?====================JHS A BLOCK======================================
 // ? entering of data of form 1 JHS A
-router.post('/marks/formone', (req, res) => {
+router.post('/marks/formone/a', (req, res) => {
     const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
-    if(oneclass == 'f1 a' || 'form 1 a' || 'form one a'){
+    if(oneclass == 'f1a' || 'form 1a' || 'form one a'){
         const query = 'INSERT INTO jhsonea SET ?'
+        const form_student = {
+            name: onename,
+            totalmarks: onetotalmarks,
+            position: oneposition,
+            remarks: oneremarks,
+        }
+
+        db.query(query, [form_student], (err, data) => {
+            if(err) throw err
+            return res.render('marks', {
+                name: onename + ' ' + 'successfully entered',
+                time: new Date().toUTCString()
+            })
+        })
+        
+    } 
+        
+
+// ? entering of data of form 2 JHS A
+router.post('/marks/formtwo/a', (req, res) => {
+    const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
+    if(oneclass == 'f2a' || 'form 2a' || 'form two a'){
+        const query = 'INSERT INTO jhstwoa SET ?'
+        const form_student = {
+            name: onename,
+            totalmarks: onetotalmarks,
+            position: oneposition,
+            remarks: oneremarks,
+        }
+
+        db.query(query, [form_student], (err, data) => {
+            if(err) throw err
+            return res.render('marks', {
+                name: onename + ' ' + 'successfully entered',
+                time: new Date().toUTCString()
+            })
+        })
+        
+    } 
+        
+
+
+// ? entering of data of form 3 JHS A
+router.post('/marks/formthree/a', (req, res) => {
+    const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
+    if(oneclass == 'f3a' || 'form 3a' || 'form three a'){
+        const query = 'INSERT INTO jhsthreea SET ?'
         const form_student = {
             name: onename,
             totalmarks: onetotalmarks,
@@ -334,8 +381,16 @@ router.post('/marks/formone', (req, res) => {
             })
         })
         
-    } else 
-        if(oneclass == 'f1 b' || 'form 1 b' || 'form one b'){
+    } 
+        
+        // ===============================================
+
+
+
+// ? entering of data of form 1 JHS B
+router.post('/marks/formone/b', (req, res) => {
+    const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
+    if(oneclass == 'f1b' || 'form 1b' || 'form one b'){
         const query = 'INSERT INTO jhsone SET ?'
         const form_student = {
             name: onename,
@@ -352,93 +407,16 @@ router.post('/marks/formone', (req, res) => {
                 time: new Date().toUTCString()
             })
         })
-    } else 
-         if(oneclass == 'f1 c' || 'form 1 c' || 'form one c'){
-        const query = 'INSERT INTO jhsonec SET ?'
-        const form_student = {
-            name: onename,
-            totalmarks: onetotalmarks,
-            position: oneposition,
-            remarks: oneremarks,
-        }
-
-        db.query(query, [form_student], (err, data) => {
-            if(err) throw err
-            console.log('form 1 entered')
-            return res.render('marks', {
-                name: onename + ' ' + 'successfully entered',
-                time: new Date().toUTCString()
-            })
-        })
         
-    }
-})
+    } 
+        
 
-
-
-        // ===============================================
-
-// ? entering of data of form 2 JHS A
-router.post('/marks/formtwo', (req, res) => {
+    
+    
+// ? entering of data of form 2 JHS B
+router.post('/marks/formtwo/b', (req, res) => {
     const {twoname, twoclass, twototalmarks, twoposition, tworemarks} = req.body
-    if(twoclass == 'f2 a' || 'form 2 a' || 'form two a'){
-        const query = 'INSERT INTO jhstwoa SET ?'
-        const form2_student = {
-            name: twoname,
-            totalmarks: twototalmarks,
-            position: twoposition,
-            remarks: tworemarks,
-        }
-
-        db.query(query, [form2_student], (err, data) => {
-            if(err) throw err
-            console.log('form 2 entered')
-            return res.render('marks', {
-                name: twoname + ' ' + 'successfully entered',
-                time: new Date().toUTCString()
-            })
-        })
-        
-    }
-})
-
-
-// ? entering of data of form 3 JHS A
-router.post('/marks/formthree', (req, res) => {
-    const {threename, threeclass, threetotalmarks, threeposition, threeremarks} = req.body
-    if(threeclass == 'f3 a' || 'form 3 a' || 'form three a'){
-        const query = 'INSERT INTO jhsthreea SET ?'
-        const form3_student = {
-            name: threename,
-            totalmarks: threetotalmarks,
-            position: threeposition,
-            remarks: threeremarks,
-        }
-
-        db.query(query, [form3_student], (err, data) => {
-            if(err) throw err
-            console.log('form 3 entered')
-        return res.render('marks', {
-            name: threename + ' ' + 'successfully entered',
-            time: new Date().toUTCString()
-            })
-        })
-        
-    }
-})
-
-
-
-
-
-
-
-
-
-// ? entering of data of form 2 JHS A
-router.post('/marks/formtwo', (req, res) => {
-    const {twoname, twoclass, twototalmarks, twoposition, tworemarks} = req.body
-    if(twoclass == 'f2 b' || 'form 2 b' || 'form two b'){
+    if(twoclass == 'f2b' || 'form 2b' || 'form two b'){
         const query = 'INSERT INTO jhstwo SET ?'
         const form2_student = {
             name: twoname,
@@ -460,10 +438,10 @@ router.post('/marks/formtwo', (req, res) => {
 })
 
 
-// ? entering of data of form 3 JHS A
-router.post('/marks/formthree', (req, res) => {
+// ? entering of data of form 3 JHS B
+router.post('/marks/formthree/b', (req, res) => {
     const {threename, threeclass, threetotalmarks, threeposition, threeremarks} = req.body
-    if(threeclass == 'f3 b' || 'form 3 b' || 'form three b'){
+    if(threeclass == 'f3b' || 'form 3b' || 'form three b'){
         const query = 'INSERT INTO jhsthree SET ?'
         const form3_student = {
             name: threename,
@@ -485,14 +463,43 @@ router.post('/marks/formthree', (req, res) => {
 })
 
 
+// =============================================================
+
+
+// ? entering of data of form 1 JHS C
+router.post('/marks/formone/c', (req, res) => {
+    const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
+    if(oneclass == 'f1c' || 'form 1c' || 'form one c'){
+        const query = 'INSERT INTO jhsonec SET ?'
+        const form_student = {
+            name: onename,
+            totalmarks: onetotalmarks,
+            position: oneposition,
+            remarks: oneremarks,
+        }
+
+        db.query(query, [form_student], (err, data) => {
+            if(err) throw err
+            console.log('form 1 entered')
+            return res.render('marks', {
+                name: onename + ' ' + 'successfully entered',
+                time: new Date().toUTCString()
+            })
+        })
+        
+    } 
+        
 
 
 
 
-// ? entering of data of form 2 JHS A
-router.post('/marks/formtwo', (req, res) => {
+
+    
+
+// ? entering of data of form 2 JHS C
+router.post('/marks/formtwo/c', (req, res) => {
     const {twoname, twoclass, twototalmarks, twoposition, tworemarks} = req.body
-    if(twoclass == 'f2 c' || 'form 2 c' || 'form two c'){
+    if(twoclass == 'f2c' || 'form 2c' || 'form two c'){
         const query = 'INSERT INTO jhstwoc SET ?'
         const form2_student = {
             name: twoname,
@@ -514,10 +521,10 @@ router.post('/marks/formtwo', (req, res) => {
 })
 
 
-// ? entering of data of form 3 JHS A
-router.post('/marks/formthree', (req, res) => {
+// ? entering of data of form 3 JHS C
+router.post('/marks/formthree/c', (req, res) => {
     const {threename, threeclass, threetotalmarks, threeposition, threeremarks} = req.body
-    if(threeclass == 'f3 c' || 'form 3 c' || 'form three c'){
+    if(threeclass == 'f3c' || 'form 3c' || 'form three c'){
         const query = 'INSERT INTO jhsthreec SET ?'
         const form3_student = {
             name: threename,
@@ -538,6 +545,7 @@ router.post('/marks/formthree', (req, res) => {
     }
 })
 
+// =============================================================
 
 
 
