@@ -672,6 +672,7 @@ li{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  width:70%;
 }
 .a,.b,.c{
   display: flex;
