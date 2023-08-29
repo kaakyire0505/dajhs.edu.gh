@@ -672,12 +672,13 @@ li{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width:70%;
+  width:80%;
 }
 .a,.b,.c{
   display: flex;
   width: 100%;
     justify-content: space-between;
+  flex-direction: row;
 }
 .marks{
     width: 45%;
