@@ -1394,6 +1394,9 @@ li{
         width: 100%;
         padding: 5px;
     }
+    .a,.b,.c{
+      width: 100%;
+    }
 
 }
 
@@ -1540,11 +1543,14 @@ li{
     
     .portal-welcome input{
         width: 50%;
-        padding: 5px;
-    
+        padding: 5px; 
     }
     #copyright{
         margin-bottom: 9rem;
     }
+    .a,.b,.c{
+      width: 100%;
+    }
+
     
 }
