@@ -679,6 +679,7 @@ li{
   width: 100%;
     justify-content: space-between;
   flex-direction: row;
+  margin-top: 2.5rem;
 }
 .marks{
     width: 45%;
