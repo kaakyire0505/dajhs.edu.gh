@@ -314,7 +314,7 @@ router.post('/portal/formthree', (req, res) => {
 
 // ?====================JHS A BLOCK======================================
 // ? entering of data of form 1 JHS A
-router.post('/marks/formone/a', (req, res) => {
+router.post('/formone/a', (req, res) => {
     const {onename, oneclass, onetotalmarks, oneposition, oneremarks} = req.body
     if(oneclass == 'f1a' || 'form 1a' || 'form one a'){
         const query = 'INSERT INTO jhsonea SET ?'
