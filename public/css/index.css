@@ -682,7 +682,7 @@ li{
   margin-top: 2.5rem;
 }
 .marks{
-    width: 45%;
+    width: 100%;
 }
 .marks input{
     width: 80%;
@@ -693,6 +693,7 @@ li{
 }
 .marks .btn{
     width: 80%;
+  margin-bottom: 1rem;
 }
 .marks .btn:hover{
     outline: none;
