@@ -99,9 +99,6 @@ router.post('/portal/admin', async (req, res) => {
 
 
 
-
-
-
 // ? Form one portal
 router.get('/portal/formone/b', async (req , res) => {
     const query = 'SELECT * FROM jhsone'
