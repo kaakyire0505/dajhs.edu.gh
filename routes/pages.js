@@ -338,7 +338,7 @@ router.post('/formone/a', (req, res) => {
 
     
 // ? entering of data of form 2 JHS A
-router.post('/formtwo/a', (req, res) => {
+router.post('/formtwoa', (req, res) => {
     const {twoname, twoclass, twototalmarks, twoposition, tworemarks} = req.body
     if(oneclass == 'f2a' || 'form 2a' || 'form two a'){
         const query = 'INSERT INTO jhstwoa SET ?'
