@@ -1393,7 +1393,9 @@ li{
       display: flex;
   flex-direction: column;
     }
-
+.fote{
+  height: fit-content;
+}
 }
 
 
