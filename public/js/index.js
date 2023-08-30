@@ -72,8 +72,6 @@ searchButton.addEventListener('click', (e) => {
  }
 
 
-
-
 // ? going to admin side
 const adform = document.getElementById('adform')
 const key = document.getElementById('key') 
