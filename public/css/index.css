@@ -655,9 +655,7 @@ li{
     width: 50%;
     padding: 5px;
 }
-#oneform,#twoform,#threeform{
-    display: none;
-}
+
 
 
 
@@ -934,9 +932,6 @@ li{
     font-size: 1.1rem;
     color: greenyellow;
     margin-top: 20px;
-}
-#adform{
-    display: none;
 }
 .school-goal{
     margin-top: var(--margin-top-one);
