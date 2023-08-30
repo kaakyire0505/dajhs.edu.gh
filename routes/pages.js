@@ -81,7 +81,7 @@ router.post('/portal/admin', async (req, res) => {
         const user = {
             name: 'Emmanuel Boachie',
             password: adminpassword,
-            time: new Date().toUTCString()
+            logintime: new Date().toUTCString()
         }
     
         const query = 'INSERT INTO admin SET ?'
