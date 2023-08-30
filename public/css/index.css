@@ -925,11 +925,8 @@ li{
 }
 #adminform{
     margin-top: 0.6rem;
-    width: 100%;
+    width: 60%;
     padding: 7px;
-}
-#adminform input{
-  width: 60%;
 }
 #mess{
     font-size: 1.1rem;
