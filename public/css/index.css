@@ -928,6 +928,9 @@ li{
     width: 100%;
     padding: 7px;
 }
+#adminform input{
+  width: 60%;
+}
 #mess{
     font-size: 1.1rem;
     color: greenyellow;
