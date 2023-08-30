@@ -99,7 +99,7 @@ router.post('/portal/admin', async (req, res) => {
 
 
 
-// ? Form one portal
+// ? FORM ONE'S portal
 router.get('/portal/formonea/results', async (req , res) => {
     const query = 'SELECT * FROM jhsone'
     db.query(query, (err, data) => {
@@ -116,7 +116,6 @@ router.get('/portal/formonea/results', async (req , res) => {
 
 
 
-// ? Form one portal
 router.get('/portal/formoneb/results', async (req , res) => {
     const query = 'SELECT * FROM jhsone'
     db.query(query, (err, data) => {
@@ -150,60 +149,8 @@ router.get('/portal/formonec/results', async (req , res) => {
 
 
 
-// ?formtwo portal B
-router.get('/portal/formtwo/b', async (req , res) => {
-    const query = 'SELECT * FROM jhstwo'
-    db.query(query, (err, data) => {
-        if(err){
-            throw err
-        } else {
-            res.render('twoportal', {
-                users: data
-            })
-        }
-    })
-    
-})
-
-
-
-// ?formthree portal B
-router.get('/portal/formthree/b', async (req , res) => {
-    const query = 'SELECT * FROM jhsthree'
-    db.query(query, (err, data) => {
-        if(err){
-            throw err
-        } else {
-            res.render('threeportal', {
-                users: data
-            })
-        }
-    })
-    
-})
-
-
-
-// ?=========================JHS A TABLES ROUTE============================
-// ? Form one portal A
-router.get('/portal/formone/a', async (req , res) => {
-    const query = 'SELECT * FROM jhsonea'
-    db.query(query, (err, data) => {
-        if(err){
-            throw err
-        } else {
-            res.render('one-a', {
-                users: data
-            })
-        }
-    })
-    
-})
-
-
-
-// ?formtwo portal A
-router.get('/portal/formtwo/a', async (req , res) => {
+// ?FORM TWO PORTAL
+router.get('/portal/formtwoa/results', async (req , res) => {
     const query = 'SELECT * FROM jhstwoa'
     db.query(query, (err, data) => {
         if(err){
@@ -218,15 +165,13 @@ router.get('/portal/formtwo/a', async (req , res) => {
 })
 
 
-
-// ?formthree portal A
-router.get('/portal/formthree/a', async (req , res) => {
-    const query = 'SELECT * FROM jhsthreea'
+router.get('/portal/formtwob/results', async (req , res) => {
+    const query = 'SELECT * FROM jhstwo'
     db.query(query, (err, data) => {
         if(err){
             throw err
         } else {
-            res.render('three-a', {
+            res.render('twoportal', {
                 users: data
             })
         }
@@ -234,15 +179,8 @@ router.get('/portal/formthree/a', async (req , res) => {
     
 })
 
-// ?===================END OF JHS A TABLES ROUTE==========================
 
-
-
-
-
-
-// ?formtwo portal C
-router.get('/portal/formtwo/c', async (req , res) => {
+router.get('/portal/formtwoc/results', async (req , res) => {
     const query = 'SELECT * FROM jhstwoc'
     db.query(query, (err, data) => {
         if(err){
@@ -258,8 +196,44 @@ router.get('/portal/formtwo/c', async (req , res) => {
 
 
 
-// ?formthree portal C
-router.get('/portal/formthree/c', async (req , res) => {
+
+
+
+
+
+
+// FORM THREE PORTAL
+router.get('/portal/formthreea/results', async (req , res) => {
+    const query = 'SELECT * FROM jhsthreea'
+    db.query(query, (err, data) => {
+        if(err){
+            throw err
+        } else {
+            res.render('three-a', {
+                users: data
+            })
+        }
+    })
+    
+})
+
+
+router.get('/portal/formthreeb/results', async (req , res) => {
+    const query = 'SELECT * FROM jhsthree'
+    db.query(query, (err, data) => {
+        if(err){
+            throw err
+        } else {
+            res.render('threeportal', {
+                users: data
+            })
+        }
+    })
+    
+})
+
+
+router.get('/portal/formthreec/results', async (req , res) => {
     const query = 'SELECT * FROM jhsthreec'
     db.query(query, (err, data) => {
         if(err){
@@ -296,13 +270,13 @@ router.post('/portal/formone/results', (req, res) => {
 router.post('/portal/formtwo/results', (req, res) => {
     const {formtwo} = req.body
     if(formtwo == 'formtwoa'){
-        res.render('two-a')
+        res.redirect('/portal/formtwoa/results')
     } else
     if(formtwo == 'formtwob'){
-        res.render('twoportal')
+        res.redirect('/portal/formtwob/results')
     } else
     if(formtwo == 'formtwoc'){
-        res.render('two-c')
+        res.redirect('/portal/formtwoc/results')
     } else {
         return res.render('portal')
     }
@@ -314,13 +288,13 @@ router.post('/portal/formtwo/results', (req, res) => {
 router.post('/portal/formthree/results', (req, res) => {
     const {formthree} = req.body
     if(formthree == 'formthreea'){
-        res.render('three-a')
+        res.redirect('/portal/formthreea/results')
     } else
     if(formthree == 'formthreeb'){
-        res.render('threeportal')
+        res.redirect('/portal/formthreeb/results')
     } else
     if(formthree == 'formthreec'){
-        res.render('three-c')
+        res.redirect('/portal/formthreec/results')
     } else {
         return res.render('portal')
     }
