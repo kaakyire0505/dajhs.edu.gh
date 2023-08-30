@@ -256,7 +256,7 @@ router.get('/portal/formthree/c', async (req , res) => {
 
 
 // ? form one pupil portal validation
-router.post('/portal/formone', (req, res) => {
+router.post('/portal/formone/results', (req, res) => {
     const {formone} = req.body
     if(formone == 'formonea'){
        return res.render('one-a')
@@ -273,7 +273,7 @@ router.post('/portal/formone', (req, res) => {
 
 
 // ? form two pupil portal validation
-router.post('/portal/formtwo', (req, res) => {
+router.post('/portal/formtwo/results', (req, res) => {
     const {formtwo} = req.body
     if(formtwo == 'formtwoa'){
         res.render('two-a')
@@ -291,7 +291,7 @@ router.post('/portal/formtwo', (req, res) => {
 
 
 // ? form three pupil portal validation
-router.post('/portal/formthree', (req, res) => {
+router.post('/portal/formthree/results', (req, res) => {
     const {formthree} = req.body
     if(formthree == 'formthreea'){
         res.render('three-a')
