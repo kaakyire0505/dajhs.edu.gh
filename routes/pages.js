@@ -100,13 +100,47 @@ router.post('/portal/admin', async (req, res) => {
 
 
 // ? Form one portal
-router.get('/portal/formone/b', async (req , res) => {
+router.get('/portal/formonea/results', async (req , res) => {
+    const query = 'SELECT * FROM jhsone'
+    db.query(query, (err, data) => {
+        if(err){
+            throw err
+        } else {
+            res.render('one-a', {
+                users: data
+            })
+        }
+    })
+    
+})
+
+
+
+// ? Form one portal
+router.get('/portal/formoneb/results', async (req , res) => {
     const query = 'SELECT * FROM jhsone'
     db.query(query, (err, data) => {
         if(err){
             throw err
         } else {
             res.render('oneportal', {
+                users: data
+            })
+        }
+    })
+    
+})
+
+
+
+// ? Form one portal C
+router.get('/portal/formonec/results', async (req , res) => {
+    const query = 'SELECT * FROM jhsonec'
+    db.query(query, (err, data) => {
+        if(err){
+            throw err
+        } else {
+            res.render('one-c', {
                 users: data
             })
         }
@@ -204,20 +238,6 @@ router.get('/portal/formthree/a', async (req , res) => {
 
 
 
-// ? Form one portal C
-router.get('/portal/formone/c', async (req , res) => {
-    const query = 'SELECT * FROM jhsonec'
-    db.query(query, (err, data) => {
-        if(err){
-            throw err
-        } else {
-            res.render('one-c', {
-                users: data
-            })
-        }
-    })
-    
-})
 
 
 
@@ -259,13 +279,13 @@ router.get('/portal/formthree/c', async (req , res) => {
 router.post('/portal/formone/results', (req, res) => {
     const {formone} = req.body
     if(formone == 'formonea'){
-       return res.render('one-a')
+       res.redirect('/portal/formonea/results')
     } else
     if(formone == 'formoneb'){
-       return res.render('oneportal')
+        res.redirect('/portal/formoneb/results')
     } else
     if(formone == 'formonec'){
-       return res.render('one-c')
+       res.redirect('/portal/formonec/results')
     } else {
         return res.render('portal')
     }
