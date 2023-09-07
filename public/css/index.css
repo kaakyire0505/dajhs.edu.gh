@@ -928,6 +928,8 @@ li{
     width: 60%;
     padding: 7px;
 }
+#adminbtn{
+  width: 50%;
 #mess{
     font-size: 1.1rem;
     color: greenyellow;
