@@ -76,10 +76,10 @@ searchButton.addEventListener('click', (e) => {
 const adform = document.getElementById('adform')
 const key = document.getElementById('key') 
 
-key.addEventListener('click', (e) => {
-    e.preventDefault()
-        adform.style.display = 'block'
-})
+// key.addEventListener('click', (e) => {
+//     e.preventDefault()
+//         adform.style.display = 'block'
+// })
 
 
 
