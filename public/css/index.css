@@ -1112,6 +1112,12 @@ li{
     }
     /* ?=========BANNER ENDS============= */
 
+  .dictionary{
+    margin-top: 40px;
+  }
+  #search-input{
+    width: 80%;
+  }
     #profile-course{
         display: flex;
         flex-direction: column;
@@ -1278,6 +1284,12 @@ li{
     .svg{
         margin-left: 10rem;
     }
+  .dictionary{
+    margin-top: 40px;
+  }
+   #search-input{
+    width: 80%;
+  }
     .portfolio-section{
         display: flex;
         flex-direction: column;
