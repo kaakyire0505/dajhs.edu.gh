@@ -7,7 +7,6 @@
     text-decoration: none;
     box-sizing: border;
     font-size: 16px;
-  
 }
 :root{
     --general_color: #fbfafa;
@@ -21,7 +20,7 @@
     --box_shadow: 0rem 0.9rem 0.9rem rgba(0,0,0,0.2);
     --border_radius: 0.8rem;
     --line_height: 1.7rem;
-    --gen_width: 82.6%;
+    --gen_width: 81.5%;
     --swiperWidth: 60%;
     --width-100: 100%;
     --gen_height: 100vh;
@@ -195,132 +194,6 @@ li{
     margin-left: 100px;
 }
 /* ?======END OF BANNER========================== */
-
-
-
-
-.dictionary{
-    width: var(--gen_width);
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    box-shadow: var(--box-shadow);
-    padding: 10px;
-    flex-wrap: wrap;
-     margin-top: var(--margin-top-one);
-    margin-left: 5rem;
-  border: var(--border);
-  border-radius: var(--border_radius)
-}
-.search{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-}
-.dictionary i{
-  color: darkorange;
-}
-.dictionary h4{
-  text-align: center;
-}
-.search input{
-    width: 100%;
-    padding: 10px;
-}
-.search input:focus{
-  outline: none;
-  background: darkorange;
-  color: whitesmoke;
-}
-.search button{
-    width: 100%;
-    cursor: pointer;
-  margin-left: 35px;
-}
-#search-button{
-  margin-left: 15px;
-  font-size: 1.7rem;
-  color: darkorange;
-}
-.sample{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-  flex-direction: column;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-.wordsound{
-  display: flex;
-  justify-content: space-beween;
-  width: 100%;
-}
-.sound{
-  margin-left: 7rem;
-  margin-top: 1rem;
-}
-.sample p{
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-left: 1rem;
-}
-.text-muted{
-    font-size: 0.7rem;
-}
-.meaning{
-    display: flex;
-    padding: 1rem;
-    border-right: 3px solid greenyellow;
-}
-.definition{
-    display: flex;
-    padding: 1rem;
-    flex-direction: column;
-    border-left: 10px solid darkblue;
-}
-.phonetic{
-    width: 100%;
-    height: fit-content;
-    padding: 1rem;
-    border-right: 3px solid red;
-}
-.synonyms{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: fit-content;
-    padding: 1rem;
-    border-right: 3px solid black;
-    
-}
-
-.antonyms{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: fit-content;
-    padding: 1rem;
-    border-left: 3px solid red;
-}
-.examples{
-    width: 100%;
-    height: fit-content;
-    border-right: 3px solid darkorange;
-    padding: 1rem;
-    font-style: italic;
-}
-#sound{
-    font-size: 1.5rem;
-    color: darkorange;
-    cursor: pointer;
-  font-size: 1.7rem;
-}
-
-
-
 
 
 
@@ -655,7 +528,9 @@ li{
     width: 50%;
     padding: 5px;
 }
-
+#oneform,#twoform,#threeform{
+    display: none;
+}
 
 
 
@@ -666,20 +541,8 @@ li{
     height: 500px;
     background-color: rgba(0,0,0,0.2);
 }
-.marks-container{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width:100%;
-}
-.a,.b,.c{
-  display: flex;
-  width: 100%;
-    justify-content: space-between;
-  margin-top: 2rem;
-}
 .marks{
-    width: 100%;
+    width: 45%;
 }
 .marks input{
     width: 80%;
@@ -690,7 +553,6 @@ li{
 }
 .marks .btn{
     width: 80%;
-  margin-bottom: 3rem;
 }
 .marks .btn:hover{
     outline: none;
@@ -925,15 +787,16 @@ li{
 }
 #adminform{
     margin-top: 0.6rem;
-    width: 60%;
+    width: 100%;
     padding: 7px;
 }
-#adminbtn{
-  width: 60%;
 #mess{
     font-size: 1.1rem;
     color: greenyellow;
     margin-top: 20px;
+}
+#adform{
+    display: none;
 }
 .school-goal{
     margin-top: var(--margin-top-one);
@@ -957,30 +820,33 @@ li{
 .events{
     padding: 2rem;
     height: fit-content;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     margin-top: 5rem;
 }
 .left{
-    width: 100%;
+    width: 45%;
 }
-.news-container{
-  width: 50%;
+.right{
+    width: 50%;
+    user-select: none;
 }
 .news{
     padding: 10px;
-    width: 50%;
+    width: 30%;
     height: fit-content;
     box-shadow: var(--box_shadow);
     border-radius: var(--border_radius);
     margin-top: 20px;
 }
 .news-image img{
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 #newsimg{
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -989,7 +855,7 @@ li{
     color: grey;
 }
 .news-content{
-    width: 50%;
+    width: 100%;
     margin-top: 10px;
 }
 .news-container{
@@ -1002,7 +868,7 @@ li{
     border-radius: none;
 }
 #news{
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -1026,13 +892,13 @@ li{
         top: 0;
     }
     #open-menu{
-        margin-left: 43rem;
+        margin-left: 40rem;
         font-size: 1.7rem;
         color: darkorange;
     }
     #close-menu{
         font-size: 1.7rem;
-        margin-left: 20rem;
+        margin-left: 40rem;
         color: darkorange;
         display: none;
         
@@ -1168,7 +1034,6 @@ li{
     }
 
 
-  
     /* ?=========PORTAL MARKS SECTION========= */
     .student-portal{
         margin-top: 2rem;
@@ -1212,25 +1077,13 @@ li{
     .container{
         height: fit-content;
     }
-  .dictionary{
-    width: 380px;
-     margin-left: 0;
-    margin-top: 20px;
-  }
-  .sample{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
     #toggle{
         display: block;
-        width: 94%;
+        width: 94.5%;
         background-color: var(--background_gradient);
     }
     #open-menu,#close-menu{
-        margin-left: 20rem;
+        margin-left: 25rem;
         color: darkorange;
     }
     #navbar{
@@ -1243,14 +1096,14 @@ li{
     }
     .leaders{
         width: 100%;
-        border-bottom-right-radius: 200px;
+        border-bottom-right-radius: 300px;
         height: fit-content;
     }
     .message h5,h4{
         font-size: 1rem;
     }
     .svg{
-        margin-left: 10rem;
+        margin-left: 13rem;
     }
     .svg img{
         margin-left: 1rem;
@@ -1317,8 +1170,8 @@ li{
     .sports-gallery img,.cleanup-gallery img,
     .talk-gallery img,.health-gallery img,
     .election-gallery img,.match-gallery img,.excursion-gallery img{
-        width: 100%;
-        height: 100%;
+        width: 40%;
+        height: 40%;
     }
     /* ?==========GALLERY ENDS=============== */
 
@@ -1391,14 +1244,7 @@ li{
         width: 100%;
         padding: 5px;
     }
-    .a,.b,.c{
-      width: 100%;
-      display: flex;
-  flex-direction: column;
-    }
-.fote{
-  height: fit-content;
-}
+
 }
 
 
@@ -1409,30 +1255,18 @@ li{
 @media (max-width: 400px){
     #toggle{
         display: block;
-        width: 93%;
+        width: 93.5%;
         background-color: var(--background_gradient);
     }
-  .dictionary{
-    width: 380px;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-  .sample{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
     #open-menu,#close-menu{
-        margin-left: 18rem;
+        margin-left: 20rem;
         color: darkorange;
     }
     .portfolio-section{
         margin-top: 1.7rem;
     }
     .svg{
-        margin-left: 7rem;
+        margin-left: 10rem;
     }
     .portfolio-section{
         display: flex;
@@ -1441,7 +1275,7 @@ li{
     }
     .leaders{
         width: 100%;
-        border-bottom-right-radius: 130px;
+        border-bottom-right-radius: 180px;
         height: fit-content;
     }
     .heads{
@@ -1466,20 +1300,19 @@ li{
     .tutors-image-container img{
         width: 100%;
     }
-     .school-goal{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
+    
     .tutors-gallery img,.culture-gallery img,
     .sports-gallery img,.cleanup-gallery img,
     .talk-gallery img,.health-gallery img,
     .election-gallery img,.match-gallery img,.excursion-gallery img{
-        width: 100%;
-        height: 100%;
+        width: 45%;
+        height: 45%;
     }
-    
+    .school-goal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
     .visions,.mision{
         width: 100%;
     }
@@ -1544,16 +1377,11 @@ li{
     
     .portal-welcome input{
         width: 50%;
-        padding: 5px; 
+        padding: 5px;
+    
     }
     #copyright{
         margin-bottom: 9rem;
     }
-    .a,.b,.c{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-
     
 }
