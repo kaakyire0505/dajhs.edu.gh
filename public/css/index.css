@@ -1112,6 +1112,16 @@ li{
     }
     /* ?=========BANNER ENDS============= */
 
+    #profile-course{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile{
+        width: 100%;
+    }
+    .course{
+        width: 100%;
+    }
     .teachers{
         border-right: none;
         width: 100%;
@@ -1271,6 +1281,17 @@ li{
     .portfolio-section{
         display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+    
+    #profile-course{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile{
+        width: 100%;
+    }
+    .course{
         width: 100%;
     }
     .leaders{
