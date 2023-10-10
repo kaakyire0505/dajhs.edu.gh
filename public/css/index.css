@@ -1117,6 +1117,7 @@ li{
   }
   #search-input{
     width: 80%;
+    padding: 5px;
   }
     #profile-course{
         display: flex;
@@ -1289,6 +1290,7 @@ li{
   }
    #search-input{
     width: 80%;
+     padding: 5px;
   }
     .portfolio-section{
         display: flex;
