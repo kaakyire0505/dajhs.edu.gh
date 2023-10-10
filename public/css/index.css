@@ -195,6 +195,13 @@ li{
 }
 /* ?======END OF BANNER========================== */
 
+.dictionary{
+  margin-top: 30px;
+}
+#search-input{
+  width: 100%;
+  padding: 5px;
+}
 
 
 
