@@ -1283,7 +1283,9 @@ li{
         flex-direction: column;
         width: 100%;
     }
-    
+    .dictionary{
+      margin-top: 40px;
+    }
     #profile-course{
         display: flex;
         flex-direction: column;
